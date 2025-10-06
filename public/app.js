@@ -20,7 +20,7 @@ form.addEventListener('submit', async (e)=>{
     time: document.getElementById('time').value
   };
   try{
-    const res = await fetch('/api/attack',{
+    const res = await fetch(`http://178.128.223.204:3000/api/attack`, {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify(body)
